@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>name of company</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  
+  </head>
+  <script>
+    /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
+          }
+        }
+      }
+    };
+
+  </script>
+  <body>
+    <div class="wrapper">
+      <div class="header" id="top">
+        <div class="menu">
+          <nav>
+            <div class="logo"><img src="logo_name.png" /></div>
+            <!-- <ul>
+                                <li><a href="">Work</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Story</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Contact</a></li>
+                              </ul> -->
+            <div class="dropdown">
+              <input
+                type="image"
+                src="menu_icon.png"
+                onclick="myFunction()"
+                class="dropbtn"
+              />
+              </div>
+              <!-- <button onclick="myFunction()" class="dropbtn"><img src="menu_icon.png" alt=""/></button> -->
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#top">Главная</a>
+                <a href="#why_we">Почему мы?</a>
+                <a href="#what_you_will_get">Что вы получите</a>
+                <a href="#cost">Стоимость услуг</a>
+                <a href="#who_audit">Кто подлежит обязателньому аудиту?</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#appointment">Записаться на консультацию</a>
+                <a href="#contacts">Контакты</a>
+              </div>
+            <!-- </div> -->
+          </nav>
+        </div>
+        <div class="foreground_text_container">
+          <!-- <h1 class="title">Профессиональные аудиторские услуги</h1> -->
+          <h1 class="foreground_text">Профессиональные аудиторские услуги</h1>
+        </div>
+        <div class="foreground_button_container">
+          <a id="get_appointment" class="button1">Запись на консультацию</a>
+          <!-- <button id="idbutton5" class="show_next_1">Запись на консультацию</button> -->
+          <div class="zatemnenie"><window> <a class="close_window">X</a>
+            <form method="post">
+              <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
+              <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
+              <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
+              <input type="submit" value="Отправить">
+            </form>
+            <p>Нажимая на кнопку, вы соглашаетесь с <a href="#" class="polit-conf">политикой конфеденциальности</a></p>
+          </window></div>
+        </div>
+      </div>
+      <div class="content">
+
+        <!-- ----------------------------Why we?---------------------------------------------- -->
+
+        <div class="why_we" id="why_we">
+          <!-- <div class="why_we_align"> -->
+            <h2>Почему мы?</h2>
+            <ul type="disk">
+              <li>более 11 лет опыта работы</li>
+              <li>
+                предоставление услуг в полном соответсвии с законодательством
+              </li>
+              <li>
+                гарантия сроков выполнения, независимость, конфеденциальность
+              </li>
+              <li>надежное партнерство и уверенное развитие бизнеса</li>
+            </ul>
+          <!-- </div> -->
+        </div>
+
+        <!-- ------------------------------------What you will get---------------------------- -->
+
+        <div class="what_you_will_get" id="what_you_will_get">
+          <!-- <div class="what_you_will_get_block_align"> -->
+            <h2>Что вы получите:</h2>
+            <div class="what_you_will_get_block">
+              <div class="block">
+                <img src="audit.png" style="height: 4vw; width: 4vw" />
+                <p>
+                  Аудиторское заключение, подтверждающее достоверность
+                  финансовой отчетности
+                </p>
+              </div>
+              <div class="block">
+                <img src="mistakes.png" style="height: 4vw; width: 4.5vw" />
+                <p>
+                  Подбробный отчет об ошибках и рисках с рекомендациями по их
+                  устранению
+                </p>
+              </div>
+            </div>
+            <div class="what_you_will_get_block">
+              <div class="block">
+                <img src="confident.png" style="height: 3vw; width: 3.5vw" />
+                <p>Полную конфеденциальность и индивидуальный подход</p>
+              </div>
+              <div class="block">
+                <img src="money.png" style="height: 3.5vw; width: 4vw" />
+                <p>Минимизацию налоговых рисков и денежных утечек</p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <!-- -------------------------------Cost------------------------------------- -->
+
+        <div class="cost" id="cost">
+          
+          <!-- <div class="cost_align"> -->
+            <h2>Стоимость услуг</h2>
+            <div class="cost_align_block">
+              <div class="cost_block">
+                <h3>Индивидуальный аудит</h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <div class="zatemnenie-cost"><window> <a class="close_window_cost">X</a>
+                  <form>
+                    <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
+                    <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
+                    <select name="list1" id="select-cost" required>
+                      <option>Выберите из списка</option>
+                      <option>Индивидуальный аудит</option>
+                      <option>Налоговый аудит</option>
+                      <option>Обязательный аудит</option>
+                      <option>Кадровый аудит</option>
+                      <option>Ведение бухучета</option>
+                      <option>Консультация по вопросам финансов и налогообложения</option>
+                      <option>Анализ хозяйственной деятельности</option>
+                      <option>Подбор оптимальной системы налогообложения</option>
+                      <option>Юридическое сопровождение налоговых проверок</option>
+                     </select>
+                    <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
+                    <input type="submit" value="Отправить">
+                  </form>
+                  <p>Нажимая на кнопку, вы соглашаетесь с <a href="#" class="polit-conf">политикой конфеденциальности</a></p>
+                </window></div>
+              </div>
+              <div class="cost_block">
+                <h3>Налоговый аудит</h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Обязательный аудит</h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Кадровый аудит</h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Ведение бухучета</h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Консультация по вопросам <p>финансов и налогообложения</p></h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Анализ хозяйственной <p>деятельности</p></h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Подбор оптимальной <p>системы налогообложения</p></h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+              <div class="cost_block">
+                <h3>Юридическое сопровождение <p>налоговых проверок</p></h3>
+                <p class="price">от 30000р.</p>
+                <p>Какой-то текст</p>
+                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+
+        <!-- ----------------------------------Who should get an audit?---------------------- -->
+
+        <div class="who_audit" id="who_audit">
+          <!-- <div class="who_audit_align"> -->
+            <h2>Кто подлежит обязательному аудиту?</h2>
+            <div class="who_blocks">
+              <div class="who_block">
+                <h3>Акционерные общества</h3>
+                <p>независимо от суммы выручки <p>и активов баланса</p></p>
+              </div>
+              <div class="who_block">
+                <h3>
+                  Организации, <p>в том числе и общества</p> с ограниченоой
+                  ответственность (ООО)
+                </h3>
+                <p>
+                  При достижении выручки за год, <p>предшествовавшему отчетному,</p>
+                  свыше 400 млн.руб. или суммы <p>активов баланса по состоянию на
+                  года,</p>предшествовавшие отчетному, - 60 млн. руб.
+                </p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+
+         <!-------------------------------- Slideshow container --------------------------------->
+
+          <div class="slideshow-container" id="reviews">
+            <h2>Отзывы наших клиентов</h2>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img src="img1.png" class="slideshow-images">
+              <!-- <img src="img1.jpg" style="width:100%"> -->
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="img2.png" class="slideshow-images">
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="img3.png" class="slideshow-images">
+              <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <!-- ------------------------------Appointment----------------------------------- -->
+          
+          <div class="appointment" id="appointment">
+            <h2>Запись на консультацию</h2>
+            <form>
+              <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
+              <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
+              <textarea id="subject" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:25vh"></textarea>
+              <input type="submit" value="Отправить">
+            </form>
+            <p>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфеденциальности</a></p>
+          </div>
+
+          <!-- -------------------------------Contacts-------------------------------------- -->
+
+          <footer class="footer-distributed" id="contacts">
+                <div class="footer-left">
+                  <div class="footer-left-flex">
+                  <div class="logo1"><img src="logo_name.png" /></div>
+                  <!-- <p class="footer-links">
+                    <a href="#top" class="link-1">Главная</a>
+                    <a href="#cost">Стоимость услуг</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#appointment">Запись на консультацию</a>
+                    <a href="#contacts">Контакты</a>
+                  </p> -->
+                  <div class="space-between-footer-1"></div>
+                  <p class="footer-company-name">© 2021. Аудит-Баланс</p>
+                </div>
+                </div>
+
+                <div class="footer-center">
+
+                  <!-- <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>г. Новосибирск</span> Какой-то адрес</p>
+                  </div> -->
+
+                  <!-- <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+7 (913) 954-77-02</p>
+                  </div> -->
+
+                  <!-- <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                  </div> -->
+
+                  <p class="footer-links">
+                    <a href="#top" class="link-2">Главная</a>
+                    <a class="link-1"></a>
+                    <a href="#cost" class="link-2">Стоимость услуг</a>
+                    <a class="link-1"></a>
+                    <a href="#reviews" class="link-2">Отзывы</a>
+                    <a class="link-1"></a>
+                    <a href="#appointment" class="link-2">Запись на консультацию</a>
+                    <a class="link-1"></a>
+                    <a href="#contacts" class="link-2">Контакты</a>
+                  </p>
+                  <div class="space-between-footer"></div>
+                  <a href="#" class="link-3">Политика конфеденциальности</a>
+
+                </div>
+
+                <div class="footer-right">
+
+                  <p class="footer-company-about">
+                    <span>Генеральный директор:</span>
+                    NAME
+                    </p>
+                    <p class="footer-company-about">telefon</p>
+                    <p class="footer-company-about">city</p>
+                    <p class="footer-company-about">adress</p>
+                    <p class="footer-company-about"><a href="mailto:help@support.com">help@support.com</a></p>
+
+                  <!-- <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                  </div> -->
+
+                </div>
+              </footer>
+      </div>
+
+      <!-- <button id="idbutton5" class="show_next_1">button</button> -->
+      <!-- <div class="zatemnenie"><window> <a class="close_window">X</a>
+      <form method="post">
+        <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
+        <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
+        <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
+        <input type="submit" value="Отправить">
+      </form>
+
+      </window></div> -->
+
+    </div>
+  </body>
+  <script>
+
+    var close_next;
+    document.addEventListener("click", function(is_close) {
+    // if (is_close.target.className =="show_next_1")
+    if (is_close.target.id =="get_appointment")
+    {
+    close_next = is_close.target.id;
+    document.getElementById(close_next).nextElementSibling.style="display:block";
+    }
+    if (is_close.target.className =="close_window")
+    {
+    document.getElementById(close_next).nextElementSibling.style="display:none";
+    }
+    });
+
+    var close_next_cost;
+    document.addEventListener("click", function(is_close) {
+    if (is_close.target.id =="get_appointment_cost")
+    {
+    close_next_cost = is_close.target.id;
+    document.getElementById(close_next_cost).nextElementSibling.style="display:block";
+    }
+    if (is_close.target.className =="close_window_cost")
+    {
+    document.getElementById(close_next_cost).nextElementSibling.style="display:none";
+    }
+    });
+
+    $(".phone").mask("+7 (999) 999-99-99");
+
+    //slideshow
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      // console.log(slides.length);
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    } 
+
+
+  </script>
+</html>
