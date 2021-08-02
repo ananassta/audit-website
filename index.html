@@ -110,14 +110,14 @@
             <h2>Что вы получите:</h2>
             <div class="what_you_will_get_block">
               <div class="block">
-                <img src="audit.png" style="height: 4vw; width: 4vw" />
+                <img src="audit.png" class="img_audit" />
                 <p>
                   Аудиторское заключение, подтверждающее достоверность
                   финансовой отчетности
                 </p>
               </div>
               <div class="block">
-                <img src="mistakes.png" style="height: 4vw; width: 4.5vw" />
+                <img src="mistakes.png" class="img_mistakes" />
                 <p>
                   Подбробный отчет об ошибках и рисках с рекомендациями по их
                   устранению
@@ -126,11 +126,11 @@
             </div>
             <div class="what_you_will_get_block">
               <div class="block">
-                <img src="confident.png" style="height: 3vw; width: 3.5vw" />
+                <img src="confident.png" class="img_confident" />
                 <p>Полную конфеденциальность и индивидуальный подход</p>
               </div>
               <div class="block">
-                <img src="money.png" style="height: 3.5vw; width: 4vw" />
+                <img src="money.png" class="img_money" />
                 <p>Минимизацию налоговых рисков и денежных утечек</p>
               </div>
             </div>
@@ -148,22 +148,22 @@
                 <h3>Индивидуальный аудит</h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="1" class="button_cost">Рассчитать стоимость</a>
                 <div class="zatemnenie-cost"><window> <a class="close_window_cost">X</a>
                   <form>
                     <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
                     <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
-                    <select name="list1" id="select-cost" required>
-                      <option>Выберите из списка</option>
-                      <option>Индивидуальный аудит</option>
-                      <option>Налоговый аудит</option>
-                      <option>Обязательный аудит</option>
-                      <option>Кадровый аудит</option>
-                      <option>Ведение бухучета</option>
-                      <option>Консультация по вопросам финансов и налогообложения</option>
-                      <option>Анализ хозяйственной деятельности</option>
-                      <option>Подбор оптимальной системы налогообложения</option>
-                      <option>Юридическое сопровождение налоговых проверок</option>
+                    <select name="list1" id="select_cost" required>
+                      <option value="0">Выберите из списка</option>
+                      <option value="1">Индивидуальный аудит</option>
+                      <option value="2">Налоговый аудит</option>
+                      <option value="3">Обязательный аудит</option>
+                      <option value="4">Кадровый аудит</option>
+                      <option value="5">Ведение бухучета</option>
+                      <option value="6">Консультация по вопросам финансов и налогообложения</option>
+                      <option value="7">Анализ хозяйственной деятельности</option>
+                      <option value="8">Подбор оптимальной системы налогообложения</option>
+                      <option value="9">Юридическое сопровождение налоговых проверок</option>
                      </select>
                     <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
                     <input type="submit" value="Отправить">
@@ -175,49 +175,49 @@
                 <h3>Налоговый аудит</h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="2" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Обязательный аудит</h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="3" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Кадровый аудит</h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="4" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Ведение бухучета</h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="5" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Консультация по вопросам <p>финансов и налогообложения</p></h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="6" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Анализ хозяйственной <p>деятельности</p></h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="7" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Подбор оптимальной <p>системы налогообложения</p></h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="8" class="button_cost">Рассчитать стоимость</a>
               </div>
               <div class="cost_block">
                 <h3>Юридическое сопровождение <p>налоговых проверок</p></h3>
                 <p class="price">от 30000р.</p>
                 <p>Какой-то текст</p>
-                <a id="get_appointment_cost" class="button_cost">Рассчитать стоимость</a>
+                <a id="get_appointment_cost" name="9" class="button_cost">Рассчитать стоимость</a>
               </div>
             </div>
           <!-- </div> -->
@@ -255,26 +255,39 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <!-- <div class="numbertext">1 / 3</div> -->
-              <img src="img1.png" class="slideshow-images">
+              <img src="img1.png" class="slideshow-images" id="myImg1">
               <!-- <img src="img1.jpg" style="width:100%"> -->
               <!-- <div class="text">Caption Text</div> -->
             </div>
 
             <div class="mySlides fade">
               <!-- <div class="numbertext">2 / 3</div> -->
-              <img src="img2.png" class="slideshow-images">
+              <img src="img2.png" class="slideshow-images" id="myImg2">
               <!-- <div class="text">Caption Two</div> -->
             </div>
 
             <div class="mySlides fade">
               <!-- <div class="numbertext">3 / 3</div> -->
-              <img src="img3.png" class="slideshow-images">
+              <img src="img3.png" class="slideshow-images" id="myImg3">
               <!-- <div class="text">Caption Three</div> -->
             </div>
 
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div id="myModal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+            
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+            
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+
           </div>
           <br>
 
@@ -292,7 +305,7 @@
             <form>
               <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
               <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
-              <textarea id="subject" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:25vh"></textarea>
+              <textarea id="subject" name="subject" placeholder="Интересующий Вас вопрос (необязательно)"></textarea>
               <input type="submit" value="Отправить">
             </form>
             <p>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфеденциальности</a></p>
@@ -312,26 +325,11 @@
                     <a href="#contacts">Контакты</a>
                   </p> -->
                   <div class="space-between-footer-1"></div>
-                  <p class="footer-company-name">© 2021. Аудит-Баланс</p>
+                  <p class="footer-company-name">© 2021. Name of Company</p>
                 </div>
                 </div>
 
                 <div class="footer-center">
-
-                  <!-- <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>г. Новосибирск</span> Какой-то адрес</p>
-                  </div> -->
-
-                  <!-- <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+7 (913) 954-77-02</p>
-                  </div> -->
-
-                  <!-- <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">support@company.com</a></p>
-                  </div> -->
 
                   <p class="footer-links">
                     <a href="#top" class="link-2">Главная</a>
@@ -353,11 +351,11 @@
 
                   <p class="footer-company-about">
                     <span>Генеральный директор:</span>
-                    NAME
+                    Name
                     </p>
-                    <p class="footer-company-about">telefon</p>
-                    <p class="footer-company-about">city</p>
-                    <p class="footer-company-about">adress</p>
+                    <p class="footer-company-about">Phone</p>
+                    <p class="footer-company-about">City</p>
+                    <p class="footer-company-about">Adress</p>
                     <p class="footer-company-about"><a href="mailto:help@support.com">help@support.com</a></p>
 
                   <!-- <div class="footer-icons">
@@ -388,7 +386,16 @@
   </body>
   <script>
 
+    //get required select value
+    function SelectElement(id, valueToSelect)
+    {    
+    var element = document.getElementById(id);
+    element.value = valueToSelect;
+    }
+
     var close_next;
+    var close_next_cost;
+    //work of appointment buttons
     document.addEventListener("click", function(is_close) {
     // if (is_close.target.className =="show_next_1")
     if (is_close.target.id =="get_appointment")
@@ -400,14 +407,37 @@
     {
     document.getElementById(close_next).nextElementSibling.style="display:none";
     }
-    });
-
-    var close_next_cost;
-    document.addEventListener("click", function(is_close) {
     if (is_close.target.id =="get_appointment_cost")
     {
     close_next_cost = is_close.target.id;
     document.getElementById(close_next_cost).nextElementSibling.style="display:block";
+    if (is_close.target.name == "1"){
+    SelectElement("select_cost", "1");
+    }
+    if (is_close.target.name == "2"){
+    SelectElement("select_cost", "2");
+    }
+    if (is_close.target.name == "3"){
+    SelectElement("select_cost", "3");
+    }
+    if (is_close.target.name == "4"){
+    SelectElement("select_cost", "4");
+    }
+    if (is_close.target.name == "5"){
+    SelectElement("select_cost", "5");
+    }
+    if (is_close.target.name == "6"){
+    SelectElement("select_cost", "6");
+    }
+    if (is_close.target.name == "7"){
+    SelectElement("select_cost", "7");
+    }
+    if (is_close.target.name == "8"){
+    SelectElement("select_cost", "8");
+    }
+    if (is_close.target.name == "9"){
+    SelectElement("select_cost", "9");
+    }
     }
     if (is_close.target.className =="close_window_cost")
     {
@@ -415,6 +445,7 @@
     }
     });
 
+    //phone mask
     $(".phone").mask("+7 (999) 999-99-99");
 
     //slideshow
@@ -448,6 +479,40 @@
       dots[slideIndex-1].className += " active";
     } 
 
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img1.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    } 
 
   </script>
 </html>
