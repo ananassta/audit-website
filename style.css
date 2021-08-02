@@ -24,7 +24,7 @@ body {
 .header {
   background: #000 url(start_dark.png) no-repeat;
   background-size: cover;
-  /* width: 100vw; */
+  width: 100%;
   height: 100vh;
   /* padding-top: 52%; */
   /* padding-bottom: 0%; */
@@ -102,7 +102,7 @@ div.logo {
 }
 
 .logo img {
-  height: 100%;
+  height: 99%;
   object-fit: contain;
   filter: drop-shadow(2px 1px 5px rgba(0, 0, 0, 0.5));
 }
@@ -252,7 +252,7 @@ nav ul {
   background: #000 url(background_logo.png) no-repeat;
   background-size: cover;
   height: 100vh;
-  /* width: 100vw; */
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -300,7 +300,7 @@ nav ul {
   background-color: #c4c4c4;
   /* background-color: #696b69; */
   height: 100vh;
-  /* width: 100vw; */
+  width: 100%;
   /* display: block; */
   display: flex;
   flex-direction: column;
@@ -338,6 +338,7 @@ nav ul {
 .block {
   height: 20vh;
   width: 25vw;
+  margin-bottom: 3vh;
 }
 
 .block p {
@@ -346,6 +347,26 @@ nav ul {
   font-size: 3vh;
   /* margin-bottom: 5vh; */
   /* text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3); */
+}
+
+.img_audit {
+  height: 4vw;
+  /* width: 4vw; */
+}
+
+.img_mistakes {
+  height: 4vw;
+  /* width: 4.5vw; */
+}
+
+.img_confident {
+  height: 3.2vw;
+  /* width: 3.5vw; */
+}
+
+.img_money {
+  height: 3.5vw;
+  /* width: 4vw; */
 }
 
 /* .block img {
@@ -357,7 +378,7 @@ nav ul {
 .cost {
   /* display: block; */
   min-height: 100vh;
-  /* width: 100vw; */
+  width: 100%;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: column;
@@ -458,7 +479,7 @@ nav ul {
 .who_audit {
   /* display: block; */
   height: 100vh;
-  /* width: 100vw; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -515,7 +536,7 @@ nav ul {
 
 /* Slideshow container */
 .slideshow-container {
-  /* width: 100vw; */
+  width: 100%;
   height: 90vh;
   position: relative;
   /* margin: auto; */
@@ -547,10 +568,11 @@ nav ul {
 
 .slideshow-images {
   height: 70vh;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* box-align: center;
-  vertical-align: center; */
+  cursor: pointer;
+}
+
+.slideshow-images:hover {
+  opacity: 0.7;
 }
 
 /* Next & previous buttons */
@@ -589,6 +611,75 @@ nav ul {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Caption text */
@@ -660,7 +751,7 @@ nav ul {
 
 .appointment {
   height: 100vh;
-  /* width: 100vw; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -746,6 +837,9 @@ textarea {
   color: #4caf50;
 }
 
+.appointment textarea {
+  height: 25vh;
+}
 /* --------------------------------------------------------------------------------------------- */
 
 /* Footer and contacts */
@@ -990,7 +1084,8 @@ div.logo1 {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+/* @media (max-width: 880px) {
+
   .footer-distributed {
     font: bold 14px sans-serif;
   }
@@ -1007,7 +1102,7 @@ div.logo1 {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
-}
+} */
 
 /* ---------------------------------------------------------------- */
 
@@ -1089,8 +1184,8 @@ window {
 .zatemnenie-textarea {
   display: block;
   width: 100%;
-  padding: 10px 0;
-  text-indent: 20px;
+  padding: 10px 20px;
+  text-indent: none;
   margin: 10px 0;
 }
 
@@ -1145,6 +1240,7 @@ window {
 
 .zatemnenie-cost option {
   color: #858585;
+  /* width: 50%; */
   /* border-radius: 4px; */
 }
 
@@ -1189,4 +1285,334 @@ window {
   border: none;
   cursor: pointer;
   color: white;
+}
+
+/* -----------media----------------------------------------------- */
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops */
+
+  nav {
+    /* padding: 0 5vw; */
+    padding-left: 6vw;
+    padding-right: 5vw;
+  }
+
+  .foreground_text_container {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  .foreground_text {
+    font-size: 250%;
+  }
+  .button1 {
+    font-size: 2.8vh;
+    margin-top: 5vh;
+  }
+
+  .why_we {
+    background-position: center;
+  }
+  .why_we h2 {
+    font-size: 5.5vh;
+  }
+  .why_we li {
+    font-size: 3.5vh;
+    padding: 0 8%;
+  }
+
+  .what_you_will_get h2 {
+    font-size: 5vh;
+  }
+  .what_you_will_get_block {
+    width: 80vw;
+    margin-bottom: 6.5vh;
+  }
+  .block {
+    height: 20vh;
+    width: 30vw;
+    margin-bottom: 6.5vh;
+  }
+  .block p {
+    font-size: 2.5vh;
+  }
+  .img_audit {
+    height: 7vh;
+  }
+  .img_mistakes {
+    height: 7vh;
+  }
+  .img_confident {
+    height: 5.5vh;
+  }
+  .img_money {
+    height: 6vh;
+  }
+
+  .cost {
+    border-left: 2vw solid #94c49c;
+    border-right: 2vw solid #94c49c;
+  }
+  .cost h2 {
+    font-size: 5vh;
+  }
+  .cost_block h3 {
+    font-size: 3vh;
+  }
+  .price {
+    font-size: 2.75vh;
+  }
+  .button_cost {
+    font-size: 2.75vh;
+    padding: 0.5em 1.5em;
+  }
+
+  .who_audit h2 {
+    font-size: 5vh;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 80%;
+  }
+  .who_block {
+    margin-bottom: 4vh;
+    /* border-radius: 50px; */
+  }
+
+  .slideshow-container h2 {
+    width: 80%;
+    font-size: 5.25vh;
+    margin-bottom: 3vh;
+    margin-top: 16vh;
+  }
+  .slideshow-images {
+    height: 65vh;
+  }
+  .prev,
+  .next {
+    top: 67.5%;
+    width: 6vw;
+    height: 6vw;
+    font-size: 3.5vw;
+  }
+  .modal-content {
+    width: 100%;
+  }
+  .dot {
+    height: 2.5vw;
+    width: 2.5vw;
+    margin: 2vh 1vh;
+  }
+
+  .appointment h2 {
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    margin-top: 12vh;
+  }
+  .appointment input[type="text"],
+  select,
+  textarea {
+    width: 70vw;
+  }
+  .appointment input[type="text"],
+  input[type="text"]::-webkit-input-placeholder,
+  select,
+  select::-webkit-input-placeholder,
+  textarea,
+  textarea::-webkit-input-placeholder {
+    font-size: 2.5vh;
+  }
+  .appointment input[type="submit"] {
+    width: 70vw;
+    font-size: 2.5vh;
+  }
+  .appointment p {
+    font-size: 2.5vh;
+    /* width: 70vw; */
+  }
+  .appointment textarea {
+    height: 20vh;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    /* display: table-cell; */
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  .zatemnenie input[type="submit"] {
+    padding: 2vh 0;
+    padding-right: 3vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* Target portrait smartphones */
+
+  nav {
+    /* padding: 0 5vw; */
+    padding-left: 6vw;
+    padding-right: 5vw;
+  }
+
+  .foreground_text_container {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  }
+  .foreground_text {
+    font-size: 250%;
+  }
+  .button1 {
+    font-size: 2.8vh;
+    margin-top: 5vh;
+  }
+
+  .why_we {
+    background-position: center;
+  }
+  .why_we h2 {
+    font-size: 5.5vh;
+  }
+  .why_we li {
+    font-size: 3.5vh;
+    padding: 0 8%;
+  }
+
+  .what_you_will_get h2 {
+    font-size: 5vh;
+  }
+  .what_you_will_get_block {
+    width: 80vw;
+    margin-bottom: 6.5vh;
+  }
+  .block {
+    height: 20vh;
+    width: 30vw;
+    margin-bottom: 6.5vh;
+  }
+  .block p {
+    font-size: 2.5vh;
+  }
+  .img_audit {
+    height: 7vh;
+  }
+  .img_mistakes {
+    height: 7vh;
+  }
+  .img_confident {
+    height: 5.5vh;
+  }
+  .img_money {
+    height: 6vh;
+  }
+
+  .cost {
+    border-left: 2vw solid #94c49c;
+    border-right: 2vw solid #94c49c;
+  }
+  .cost h2 {
+    font-size: 5vh;
+  }
+  .cost_block h3 {
+    font-size: 3vh;
+  }
+  .price {
+    font-size: 2.75vh;
+  }
+  .button_cost {
+    font-size: 2.75vh;
+    padding: 0.5em 1.5em;
+  }
+
+  .who_audit h2 {
+    font-size: 5vh;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    width: 80%;
+  }
+  .who_block {
+    margin-bottom: 4vh;
+    /* border-radius: 50px; */
+  }
+
+  .slideshow-container h2 {
+    width: 80%;
+    font-size: 5.25vh;
+    margin-bottom: 3vh;
+    margin-top: 16vh;
+  }
+  .slideshow-images {
+    height: 65vh;
+  }
+  .prev,
+  .next {
+    top: 67.5%;
+    width: 6vw;
+    height: 6vw;
+    font-size: 3.5vw;
+  }
+  .dot {
+    height: 2.5vw;
+    width: 2.5vw;
+    margin: 2vh 1vh;
+  }
+
+  .appointment h2 {
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    margin-top: 12vh;
+  }
+  .appointment input[type="text"],
+  select,
+  textarea {
+    width: 70vw;
+  }
+  .appointment input[type="text"],
+  input[type="text"]::-webkit-input-placeholder,
+  select,
+  select::-webkit-input-placeholder,
+  textarea,
+  textarea::-webkit-input-placeholder {
+    font-size: 2.5vh;
+  }
+  .appointment input[type="submit"] {
+    width: 70vw;
+    font-size: 2.5vh;
+  }
+  .appointment p {
+    font-size: 2.5vh;
+    /* width: 70vw; */
+  }
+  .appointment textarea {
+    height: 20vh;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }
