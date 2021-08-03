@@ -73,7 +73,7 @@
           <a id="get_appointment" class="button1">Запись на консультацию</a>
           <!-- <button id="idbutton5" class="show_next_1">Запись на консультацию</button> -->
           <div class="zatemnenie"><window> <a class="close_window">X</a>
-            <form method="post">
+            <form method="post" class="gform" action="https://script.google.com/macros/s/AKfycbx1l2-K2DhQaCEroJzr9s7_2Fu2U_lZ-ZUmph16iEwoTETWbzDluTe8enGgbhmUw8pS/exec">
               <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
               <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
               <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
@@ -150,7 +150,7 @@
                 <p>Какой-то текст</p>
                 <a id="get_appointment_cost" name="1" class="button_cost">Рассчитать стоимость</a>
                 <div class="zatemnenie-cost"><window> <a class="close_window_cost">X</a>
-                  <form>
+                  <form method="post" class="gform" action="https://script.google.com/macros/s/AKfycbx1l2-K2DhQaCEroJzr9s7_2Fu2U_lZ-ZUmph16iEwoTETWbzDluTe8enGgbhmUw8pS/exec">
                     <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
                     <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
                     <select name="list1" id="select_cost" required>
@@ -302,7 +302,7 @@
           
           <div class="appointment" id="appointment">
             <h2>Запись на консультацию</h2>
-            <form>
+            <form method="post" class="gform" action="https://script.google.com/macros/s/AKfycbx1l2-K2DhQaCEroJzr9s7_2Fu2U_lZ-ZUmph16iEwoTETWbzDluTe8enGgbhmUw8pS/exec">
               <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
               <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
               <textarea id="subject" name="subject" placeholder="Интересующий Вас вопрос (необязательно)"></textarea>
@@ -383,6 +383,7 @@
       </window></div> -->
 
     </div>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
   </body>
   <script>
 
