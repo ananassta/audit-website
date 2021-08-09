@@ -1287,6 +1287,17 @@ window {
   color: white;
 }
 
+.thankyou_message{
+  display:none;
+  text-align: center;
+}
+
+.thankyou_message h2{
+  color: white;
+  font-size: 2.5vh;
+  margin: 1vh 0;
+}
+
 /* -----------media----------------------------------------------- */
 @media screen and (min-width: 480px) and (max-width: 800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops */
@@ -1454,6 +1465,11 @@ window {
   .zatemnenie input[type="submit"] {
     padding: 2vh 0;
     padding-right: 3vw;
+  }
+
+  .thankyou_message h2{
+    font-size: 2.5vh;
+    margin: 1vh 0;
   }
 }
 
