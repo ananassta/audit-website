@@ -74,10 +74,19 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
+
             var thankYouMessage = form.querySelector(".thankyou_message");
+            // var thankYouMessage = document.getElementsByClassName(thankyou_message);
+            // var closeform = document.getElementsByClassName(gform);
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
+              // closeform.style.display = "none";
+              setTimeout(function(){
+                thankYouMessage.style.display = "none";
+                // closeform.style.display = "block";
+              },5000);
             }
+            //   thankYouMessage.style.display = "block";
           }
       };
       // url encode form data for sending as post data
