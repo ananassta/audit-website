@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>name of company</title>
+    <link rel="icon" href="logo.png"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
@@ -78,6 +79,11 @@
               <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
               <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
               <input type="submit" value="Отправить">
+              <div class="thankyou_message">
+                <!-- You can customize the thankyou message by editing the code below -->
+                <h2>Заявка отправлена! Спасибо, что связались с нами!
+              </h2>
+              </div>
             </form>
             <p>Нажимая на кнопку, вы соглашаетесь с <a href="#" class="polit-conf">политикой конфеденциальности</a></p>
           </window></div>
@@ -153,7 +159,7 @@
                   <form method="post" class="gform" action="https://script.google.com/macros/s/AKfycbx1l2-K2DhQaCEroJzr9s7_2Fu2U_lZ-ZUmph16iEwoTETWbzDluTe8enGgbhmUw8pS/exec">
                     <input type="text" id="fname" name="firstname" placeholder="Контактное лицо" required>
                     <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
-                    <select name="list1" id="select_cost" required>
+                    <select name="service" id="select_cost" required>
                       <option value="0">Выберите из списка</option>
                       <option value="1">Индивидуальный аудит</option>
                       <option value="2">Налоговый аудит</option>
@@ -167,6 +173,11 @@
                      </select>
                     <textarea id="subject" class="zatemnenie-textarea" name="subject" placeholder="Интересующий Вас вопрос (необязательно)" style="height:20vh"></textarea>
                     <input type="submit" value="Отправить">
+                    <div class="thankyou_message">
+                      <!-- You can customize the thankyou message by editing the code below -->
+                      <h2>Заявка отправлена! Спасибо, что связались с нами!
+                    </h2>
+                    </div>
                   </form>
                   <p>Нажимая на кнопку, вы соглашаетесь с <a href="#" class="polit-conf">политикой конфеденциальности</a></p>
                 </window></div>
@@ -307,6 +318,11 @@
               <input type="text" class="phone" id="tnum" name="telefonnumber" placeholder="Телефон" required>
               <textarea id="subject" name="subject" placeholder="Интересующий Вас вопрос (необязательно)"></textarea>
               <input type="submit" value="Отправить">
+              <div class="thankyou_message">
+                      <!-- You can customize the thankyou message by editing the code below -->
+                      <h2>Заявка отправлена! Спасибо, что связались с нами!
+                    </h2>
+                    </div>
             </form>
             <p>Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфеденциальности</a></p>
           </div>
